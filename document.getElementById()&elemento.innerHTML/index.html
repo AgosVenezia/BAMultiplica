@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document.getElementById() y elemento.innerHTML</title>
+
+        <!-- Aquí vamos a LLAMAR nuestro código CSS de forma externa -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <h1 id="titulo">Aprendiendo a insertar código HTML usando JavaScript</h1>
+
+        <!-- Observar que la etiqueta <p> tiene un atributo que se llama id="parrafo". Este atributo ID (identificador) nos va a permitir desde JavaScript poder leer exclusiamente solo este elemento/etiqueta y trabajar con ella para modificar su contenido. -->
+        <p id="parrafo">Dentro de estas etiquetas de párrafo insertaremos más código HTML al presionar el botón de abajo. </br> Es importante saber que TODO lo que esté acá dentro de las etiquetas párrafo se eliminará y se escribirá solo lo que coloqueremos con .innerHTML();</p>
+        
+        <!-- Observar que en este caso en JavaScript creamos una función propia que se llama insertarCodigoHTML() y que aquí en el HTML simplemente lo que hacemos es llamar a través del evento onclick="" -->
+        <button onclick="insertarCodigoHTML();">Click aquí para insertar nuevas lineas de HTML en el párrafo de arriba.</button>
+
+        <!-- Aquí abajo, luego que el HTML es cargado, se van a insertar las líneas de JavaScript que escribamos en el archivo assets/js/app.js. Es por eso que vamos a ver que document.write(); va a colocar las cosas al final de nuestro HTML siempre. -->
+        <script src="assets/js/app.js"></script>
+        
+    </body>
+
+</html>

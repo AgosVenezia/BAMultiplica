@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document.write();</title>
+
+        <!-- Aquí vamos a LLAMAR nuestro código CSS de forma externa -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <!-- Aquí insertamos un botón que al hacerle click va a ejecutar el método document.write(); -->
+        <button onclick="document.write('Al presionar el botón de resetar lo que sucedió es que con el método document.write() sobreescribimos todo el archivo para imprimir este mensaje. Recordar que NO usaremos este método para insertar cosas una vez ya cargado el sitio, solo lo usaremos para insertar cosas al primer momento de carga del documento... ya veremos otro método para poder insertar código sin sobreescribir todo el documento.')">Presionar aquí para ver que pasa si utilizamos document.write() para insertar elementos una vez ya cargado el sitio web.</button>
+
+        <!-- Aquí añadimos un párrafo -->
+        <p>Este texto está insertado simplemente con HTML al momento de cargarse el sitio.</p>
+
+        <hr>
+
+        <!-- Aquí abajo, luego que el HTML es cargado, se van a insertar las líneas de JavaScript que escribamos en el archivo assets/js/app.js. Es por eso que vamos a ver que document.write(); va a colocar las cosas al final de nuestro HTML siempre. -->
+        <script src="assets/js/app.js"></script>
+    </body>
+
+</html>

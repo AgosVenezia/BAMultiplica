@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>window.alert();</title>
+
+        <!-- Aquí vamos a LLAMAR nuestro código CSS de forma externa -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <!-- La etiqueta <button> soporta un atributo que es el 'onclick=""' para que podamos ejecutar código JavaScript al presionar click sobre él -->
+
+        <button onclick="window.alert('Esta alerta está saliendo en pantalla cuando se presiona el botón');">Mostrar ventana de alerta</button>
+
+        <p>Al presionar en el botón se mostrará en pantala una ventana de diálogo alertando un mensaje. Esto se suele utilizar mucho para avisarle al usuario de algún error o información importante.</p>
+
+        <!-- Aquí abajo, luego que el HTML es cargado, se van a insertar las líneas de JavaScript que escribamos en el archivo assets/js/app.js. Es por eso que vamos a ver que document.write(); va a colocar las cosas al final de nuestro HTML siempre. -->
+        <script src="assets/js/app.js"></script>
+        
+    </body>
+
+</html>

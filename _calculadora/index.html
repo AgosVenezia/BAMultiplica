@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi primer código JS</title>
+
+        <!-- Aquí vamos a LLAMAR nuestro código CSS de forma externa -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <h1>Este es nuestra calculadora para dividir una cuenta</h1>
+        <p>¿Cuál es el total a pagar?</p>
+        <input id="total" type="number"></input>
+        <p>¿Cuántas personas son?</p>
+        <input id="personas" type="number"></input>
+        <p>¿Cuánto añadiran de propina (en porcentaje)? Si no añadirán nada, deja 0</p>
+        <input id="incremento" type="number" value="0"></input>
+        <p>Presiona el botón para continuar</p>
+        <button onclick="escribirValor(calcularTotal())">Calcula el total por persona</button>
+        <p id="resultado"></p>
+        <script src="assets/js/app.js"></script>
+    </body>
+
+</html>
